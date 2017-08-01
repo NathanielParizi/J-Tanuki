@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+
+    tools:context="com.example.go.j_tanuki.MainActivity">
+
+
+    <Button
+        android:id="@+id/SPEAKBUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPEAK"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="328dp"
+        android:layout_alignTop="@+id/VOCAB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:id="@+id/enterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Whats up"
+        android:hint="Enter text here"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="218dp"
+        android:layout_below="@+id/VOCAB"
+        android:layout_toRightOf="@+id/VOCAB"
+        android:layout_toEndOf="@+id/VOCAB" />
+
+    <Button
+        android:id="@+id/VOCAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOCABULARY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/getHTML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getHTML"
+
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/enterText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/HTML"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/getHTML"
+        android:text="@string/HTML" />
+
+
+
+</RelativeLayout>
